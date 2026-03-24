@@ -1,7 +1,6 @@
 """
 Programa principal para realizar operaciones matemáticas.
 """
-import math
 import funciones.matematicas
 
 print("Bienvenido a mi programa.")
@@ -23,7 +22,6 @@ match op:
     case "potencia":
         funciones.matematicas.potencia(num1, num2)
     case "raíz":
-        print(f"La raíz cuadrada de {num1} es {math.sqrt(num1)}")
-        print(f"La raíz cuadrada de {num2} es {math.sqrt(num2)}")
+        funciones.matematicas.raiz(num1, num2)
     case _:
         print("Operación no reconocida.")
