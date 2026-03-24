@@ -1,7 +1,7 @@
 """
 Programa principal para realizar operaciones matemáticas.
 """
-import funciones.matematicas
+import funciones.matematicas as matematicas
 
 print("Bienvenido a mi programa.")
 num1 = int(input("Introduce un número: "))
@@ -12,20 +12,20 @@ print("------------------------------")
 op = input("¿Qué operación quieres realizar? ")
 match op:
     case "suma":
-        funciones.matematicas.sumar(num1, num2)
+        matematicas.sumar(num1, num2)
     case "resta":
-        funciones.matematicas.restar(num1, num2)
+        matematicas.restar(num1, num2)
     case "multiplicación":
-        funciones.matematicas.multiplicar(num1, num2)
+        matematicas.multiplicar(num1, num2)
     case "división":
-        funciones.matematicas.dividir(num1, num2)
+        matematicas.dividir(num1, num2)
     case "potencia":
-        funciones.matematicas.potencia(num1, num2)
+        matematicas.potencia(num1, num2)
     case "raíz":
-        funciones.matematicas.raiz(num1, num2)
+        matematicas.raiz(num1, num2)
     case "módulo":
-        funciones.matematicas.modulo(num1, num2)
+        matematicas.modulo(num1, num2)
     case "División entera":
-        funciones.matematicas.division_entera(num1, num2)
+        matematicas.division_entera(num1, num2)
     case _:
         print("Operación no reconocida.")
