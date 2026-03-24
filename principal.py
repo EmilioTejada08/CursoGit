@@ -1,6 +1,25 @@
-from funciones.matematicas import *
-print ("Bienvenido a mi programa.")
-num1=int(input("Introduce un número: "))
-num2=int(input("Introduce otro número: "))
+"""
+Programa principal para realizar operaciones matemáticas.
+"""
+import funciones.matematicas
+
+print("Bienvenido a mi programa.")
+num1 = int(input("Introduce un número: "))
+num2 = int(input("Introduce otro número: "))
+
 print("------------------------------")
-sumar(num1,num2)
+
+op = input("¿Qué operación quieres realizar?")
+match op:
+    case "suma":
+        funciones.matematicas.sumar(num1, num2)
+    case "resta":
+        funciones.matematicas.restar(num1, num2)
+    case "multiplicación":
+        funciones.matematicas.multiplicar(num1, num2)
+    case "división":
+        funciones.matematicas.dividir(num1, num2)
+    case "potencia":
+        funciones.matematicas.potencia(num1, num2)
+    case _:
+        print("Operación no reconocida.")
