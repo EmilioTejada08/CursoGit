@@ -1,5 +1,9 @@
 import math
 
+"""
+Estas son funciones matemáticas.
+"""
+
 
 def sumar(n1, n2):
     print(f"La suma es {n1+n2}")
